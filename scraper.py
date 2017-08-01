@@ -21,7 +21,7 @@ for season in seasons:
 	season = str(season).split("<br/>")
 	for ep in season:
 		try:
-			string = re.findall(r'[0-9]+(.*?)–',ep)[0] +" - "+" - ".join(re.findall(r'<a href="(.*?)"',ep))
+			string = re.findall(r'([0-9]+.*?)–',ep)[0] +" - "+" - ".join(re.findall(r'<a href="(.*?)"',ep))
 			print string
 		except:
 			pass
