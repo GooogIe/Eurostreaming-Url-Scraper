@@ -18,7 +18,10 @@ def getLinkspageUrl(url):
 	scraper = cfscrape.create_scraper()
 	data = scraper.get(url).content
 
-	return ''.join(re.findall(r'<a href="(.*?)"> &gt;&gt;',data))
+	first_attempt = ''.join(re.findall(r'<a href="(.*?)"> &gt;&gt;',data))
+	if first_attempt == '':
+		return ''.join(re.findall(r'"go_to":"(.*?)"',data)).replace("\\","")
+	return first_attempt
 
 def getData(url):
 	results = []
