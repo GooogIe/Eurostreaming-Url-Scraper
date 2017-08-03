@@ -1,9 +1,24 @@
 # Eurostreaming-Url-Scraper
-Scrape any link to the episode from an eurostreaming page.
+Scrape any tv-show/movie streaming links (within eurostreaming) directly from this script.
+<p align="center"><img src="http://i.imgur.com/kdJQb1N.png" /</p>
 
-E.g. let's say i want to get all the links of all the episodes of Game of Thrones.
+# TODOs:
 
-Get the eurostreaming link containing all the episodes, and type it into the script
+* Should handle better the episodes/links output. but it's still up to you, (e.g. you can save results to a file)
+* Suggestions?
 
 
-<p align="center"><img src="http://i.imgur.com/c3NzhEx.png" /</p>
+# Requirements:
+* Python 2.7
+* Libraries: re,requests,bs4
+
+***
+# Usage
+
+* clone this repo in any directory
+* move to that dir and run
+* "python eurostreaming-scraper.py"
+* Type the movie/show name and choice the right one & enjoy your streaming :P
+
+# Contact me
+Hmu on telegram -> t.me/eigoog
