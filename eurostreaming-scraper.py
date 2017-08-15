@@ -34,8 +34,7 @@ class Eurostreamingscraper():
 		try:
 			un, status = unshortenit.unshorten_only(url)
 			tmp = url.split("/","")
-			tmp = url.split(".","")
-			if url != un or "vcrypt" not in tmp or "linkup" not in tmp:
+			if url != un or "vcrypt.net" not in tmp or "linkup.pro" not in tmp:
 				return un
 			un, status = unshortenit.unshorten(url)
 			return un
